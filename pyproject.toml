@@ -10,6 +10,12 @@ packages = []
 python = "^3.11"
 requests = "^2.31.0"
 numpy = "^1.26.2"
+poethepoet = "^0.24.4"
+
+[tool.poe.tasks]
+create_day = """
+touch day_${DAY}.py data/day_${DAY}.txt data/day_${DAY}_example.txt
+"""
 
 
 [build-system]
