@@ -42,11 +42,11 @@ def main():
 
     # Part 1
     total = sum([get_calibration_value(line) for line in lines])
-    print(f"Answer 1: {total=}")
+    print(f"Part 1: {total=}")
 
     # Part 2
     total = sum([get_calibration_value(convert(line)) for line in lines])
-    print(f"Answer 2: {total=}")
+    print(f"Part 2: {total=}")
 
 
 if __name__ == "__main__":

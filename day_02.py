@@ -47,7 +47,7 @@ def main():
     sum_of_valid_ids = sum(games.keys()) - sum(invalid_games)
 
     print(f"{invalid_games=}")
-    print(f"{sum_of_valid_ids=}")
+    print(f"Part 1: {sum_of_valid_ids=}")
 
     # Part 2
     # Take the sum of the game powers. A game power are the maximums of each color multiplied.
@@ -55,7 +55,7 @@ def main():
         math.prod([max(amount) for amount in cubes_per_color.values()])
         for cubes_per_color in games.values()
     ]
-    print(f"{sum(powers_of_games)=}")
+    print(f"Part 2: {sum(powers_of_games)=}")
 
 
 if __name__ == "__main__":

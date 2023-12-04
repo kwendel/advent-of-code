@@ -1,7 +1,6 @@
 import math
 from pathlib import Path
 from more_itertools import consecutive_groups
-import numpy as np
 
 
 class EngineSchema:
