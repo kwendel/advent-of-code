@@ -14,10 +14,9 @@ def main():
     cards = [
         line.strip().split(":")[1].split("|") for line in data.read_text().split("\n")
     ]
-    to_set = lambda numbers: set(int(n) for n in numbers.strip().split(" ") if n != "")
-    win_actual = [(to_set(card[0]), to_set(card[1])) for card in cards]
     # the winning numbers are in both sets = intersection of the sets
-    wins_per_card = [len(win & actual) for win, actual in win_actual]
+    to_set = lambda numbers: set(int(n) for n in numbers.strip().split(" ") if n != "")
+    wins_per_card = [len(to_set(card[0]) & to_set(card[1])) for card in cards]
 
     # Part 1
     total_worth = [2 ** (wins - 1) for wins in wins_per_card if wins > 0]
