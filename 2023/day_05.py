@@ -36,7 +36,7 @@ class AlmanacMapping:
 
 def main():
     # data_location = Path("./data/day_05.txt")
-    data_location = Path("./data/day_05_example.txt")
+    data_location = Path("data/day_05_example.txt")
 
     with open(data_location, "r") as f:
         lines = [stripped for line in f.readlines() if (stripped := line.strip()) != ""]

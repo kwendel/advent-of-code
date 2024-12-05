@@ -8,7 +8,7 @@ import numpy as np
 
 def main():
     # data = Path("./data/day_04_example.txt")
-    data = Path("./data/day_04.txt")
+    data = Path("data/day_04.txt")
 
     # Parse cards input into list of tuples with 0=winning and 1=actual numbers
     cards = [

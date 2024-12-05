@@ -28,7 +28,7 @@ def parse_games(path: Path):
 
 def main():
     # Parse data
-    data_location = Path("./data/day_02.txt")
+    data_location = Path("data/day_02.txt")
     games = parse_games(data_location)
 
     # Part 1

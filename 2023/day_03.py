@@ -131,7 +131,7 @@ def part_2_oneline(schema: EngineSchema):
 def main():
     # create 2d data structure of input
     # data_location = Path("./data/day_03_example.txt")
-    data_location = Path("./data/day_03.txt")
+    data_location = Path("data/day_03.txt")
     schema = EngineSchema(data_location)
 
     # Part 1

@@ -25,7 +25,7 @@ def find_losing(time_range, total_time, record) -> int:
 
 
 def main():
-    lines = Path("./data/day_06.txt").read_text().split("\n")
+    lines = Path("data/day_06.txt").read_text().split("\n")
     times = [int(n) for n in lines[0].split(":")[1].split(" ") if n != ""]
     records = [int(n) for n in lines[1].split(":")[1].split(" ") if n != ""]
 
